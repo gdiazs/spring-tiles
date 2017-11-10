@@ -41,6 +41,7 @@
 		<!-- Front end -->
 		<jquery.version>2.2.4</jquery.version>
 		<bootstrap.version>3.3.6</bootstrap.version>
+		<vue.version>2.5.2</vue.version>
 
 		<!-- Maven plugins -->
 		<maven-war-plugin.version>2.6</maven-war-plugin.version>
@@ -131,10 +132,16 @@
 		</dependency>
 
 		<dependency>
-		    <groupId>javax.servlet.jsp</groupId>
-		    <artifactId>javax.servlet.jsp-api</artifactId>
-		    <version>${jsp-api.version}</version>
-		    <scope>provided</scope>
+			<groupId>org.webjars</groupId>
+			<artifactId>vue</artifactId>
+			<version>${vue.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>javax.servlet.jsp-api</artifactId>
+			<version>${jsp-api.version}</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
