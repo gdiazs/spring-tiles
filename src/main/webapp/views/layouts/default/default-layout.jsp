@@ -1,4 +1,5 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -8,7 +9,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <tiles:insertAttribute name="common.styles" />
-<tiles:insertAttribute name="default.styles" />
+<link rel="stylesheet" type="text/css" href="<c:out value="${pageContext.servletContext.contextPath}" />/resources/css/layouts/default-layout.css"/>
+
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -41,6 +43,6 @@
 	</div>
 
 	<tiles:insertAttribute name="common.scripts" />
-	<tiles:insertAttribute name="default.scripts" />
+	<script type="text/javascript"	src="<c:out value="${pageContext.servletContext.contextPath}" />/resources/js/home/app.js"></script>
 </body>
 </html>

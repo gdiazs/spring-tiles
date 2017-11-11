@@ -4,6 +4,6 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
 	<definition name="homeIndex" extends="layout.default">
-		<put-attribute name="view" value="/WEB-INF/views/home/index.jsp" />
+		<put-attribute name="view" value="/views/home/index.jsp" />
 	</definition>
 </tiles-definitions>
