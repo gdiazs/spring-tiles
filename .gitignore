@@ -11,3 +11,6 @@
 # Maven
 log/
 target
+/.apt_generated/
+node
+node_modules
